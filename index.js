@@ -1,15 +1,22 @@
 'use strict';
-
+(async () => {
 /**
  * A ping pong bot, whenever you send "ping", it replies "pong".
  */
 
 // Import the discord.js module
 const Discord = require('discord.js');
+const { dockStart } = require('@nlpjs/basic');
+const dock = await dockStart({ use: ["Basic"]});
+const nlp = dock.get('nlp');
+await nlp.addCorpus('./diesel-en.json');
+await nlp.train();
+
 const fs = require('fs');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
+let client_id = "709925829529829416";
 let responses = [];
 let generic_responses = [
     "Thank you!",
@@ -42,9 +49,13 @@ client.on('ready', () => {
 });
 
 // Create an event listener for messages
-client.on('message', message => {
+client.on('message', async function(message){
     let regex = new RegExp("(vin|@vin|vinny)", "gmi");
-    if(regex.test(message.content)){
+
+    if(regex.test(message.content) || is_mentioned(message)){
+        let response = await nlp.process('en', message.content);
+        message.channel.send(response.answer);
+        /*
         if(message.content.includes("?")) {
             let str = responses[Math.floor(Math.random() * responses.length)];
             message.channel.send(str);
@@ -52,5 +63,11 @@ client.on('message', message => {
             let str = generic_responses[Math.floor(Math.random() * generic_responses.length)];
             message.channel.send(str);
         }
+        */
     }
 });
+
+function is_mentioned(message) {
+    return message.mentions.users.find(user => {return user.id === client_id}) != null;
+}
+})();

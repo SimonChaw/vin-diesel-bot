@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db9e83e9-5531-45ca-9607-1fd4bbe1d115" name="Default Changelist" comment="" />
+    <list default="true" id="db9e83e9-5531-45ca-9607-1fd4bbe1d115" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +19,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1bpWFXTCExTBCtbL7iB3U2p1FSP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589329412344</updated>
       <workItem from="1589329415474" duration="4956000" />
+      <workItem from="1589394085055" duration="4953000" />
     </task>
     <servers />
   </component>
@@ -67,9 +74,9 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="686" y="207" key="FileChooserDialogImpl/0.0.1920.1030/-2400.0.2400.1300@0.0.1920.1030" timestamp="1589331869364" />
-    <state x="579" y="293" key="com.intellij.ide.util.TipDialog" timestamp="1589329416725">
+    <state x="579" y="293" key="com.intellij.ide.util.TipDialog" timestamp="1589394088856">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="579" y="293" key="com.intellij.ide.util.TipDialog/0.0.1920.1030/-2400.0.2400.1300@0.0.1920.1030" timestamp="1589329416725" />
+    <state x="579" y="293" key="com.intellij.ide.util.TipDialog/0.0.1920.1030/-2400.0.2400.1300@0.0.1920.1030" timestamp="1589394088856" />
   </component>
 </project>
